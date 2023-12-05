@@ -14,11 +14,11 @@ export const Heading = () => {
     return (
         <div className="max-w-3xl space-y-4">
 
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold">
-               Your  Ideas, Documents & plans . One place . Unified . Welcome to <span className="underline">Jotion</span>
+            <h1 className="text-3xl sm:text-5xl md:text-5xl font-bold">
+               Your  Ideas, Documents & plans . One place .Unified .Welcome to <span className="underline">WorkSphere</span>
             </h1>
 
-            <h3 className="text-base sm:text-xl md:text-2xl font-medium">Jotion is the connected workspace for organized work environments</h3>
+            <h3 className="text-base sm:text-xl md:text-2xl font-medium">WorkSphere is the connected workspace for organized work environments</h3>
             
             {isLoading && (
                <div className='w-full flex items-center justify-center'>
@@ -29,7 +29,7 @@ export const Heading = () => {
             {isAuthenticated && !isLoading && (
                 <Button asChild >
                     <Link href='/documents'>
-                  Enter Jotion <ArrowRight className="h-4 w-4 ml-2"/>
+                  Enter WorkSphere <ArrowRight className="h-4 w-4 ml-2"/>
                   </Link>
                 </Button>
             )}
@@ -37,7 +37,7 @@ export const Heading = () => {
             {!isAuthenticated && !isLoading && (
                 <SignInButton mode='modal'>
                     <Button>
-                        Get Jotion Free 
+                    Get WorkSphere Free 
                         <ArrowRight className="h-4 w-4 ml-2" />
                     </Button>
 
