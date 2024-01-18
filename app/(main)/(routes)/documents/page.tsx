@@ -17,7 +17,7 @@ const DocumentPage = () => {
 
     const onCreate =()=>{
         const promise=create({title:"Untitled"})
-        .then((documentId)=> router.push(`/docuemnts/${documentId}`))
+        .then((documentId)=> router.push(`/documents/${documentId}`))
 
         toast.promise(promise, {
             loading: 'Creating your worksphere...',
