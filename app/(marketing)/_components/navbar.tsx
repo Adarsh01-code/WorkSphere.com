@@ -18,7 +18,7 @@ export const Navbar = () => {
         <div className={cn("dark:bg-[#1F1F1F] z-50 bg-background top-0 flex items-center w-full p-6", scrolled && " fixed border-b shadow-sm")}>
             <Logo />
 
-            <div className="md:ml-auto md:justify-end justify-between w-full flex items-center gap-x-2">
+            <div className="md:ml-auto md:justify-end justify-between w-full flex items-center gap-x-3">
                
                {isLoading && (
                 <Spinner />
@@ -34,8 +34,8 @@ export const Navbar = () => {
                     </SignInButton>
 
                     <SignInButton mode='modal'>
-                        <Button  size='sm'>
-                            Get Jotion Free
+                        <Button  size='sm' >
+                            Get Worksphere Free
                         </Button>
                     </SignInButton>
                     </>
@@ -46,7 +46,7 @@ export const Navbar = () => {
                 <>
                 <Button variant='ghost' size='sm' asChild>
                     <Link href="/documents">
-                        Enter Jotion
+                        Enter your sphere
                     </Link>
                 </Button>
 
