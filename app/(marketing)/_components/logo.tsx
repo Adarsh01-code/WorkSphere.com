@@ -9,20 +9,20 @@ const font = Poppins({
 
 export const Logo = () => {
     return (
-        <div className="hidden md:flex items-center gap-x-2">
+        <div className="hidden md:flex items-center gap-x-4">
             <Image
-            src='/logo.svg'
+            src='/mainLogo-dark.svg'
             alt='Logo'
-            width="40"
-            height="40"
+            width="35"
+            height="35"
             className="dark:hidden"
             />
 
             <Image
-            src='/logo-dark.svg'
+            src='/mainLogo-white.svg'
             alt='Logo'
-            width="40"
-            height="40"
+            width="35"
+            height="35"
             className="hidden dark:block"
             />
 
