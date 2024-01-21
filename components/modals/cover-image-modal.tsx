@@ -66,11 +66,14 @@ export const CoverImageModal = () => {
                         Cover Image
                     </h2>
                 </DialogHeader>
+
                 <SingleImageDropzone
                 className="w-full outline-none"
                 disabled={isSubmitting}
                 value={file}
                 onChange={onChange}
+                width={460} 
+                height={150}
                 />
             </DialogContent>
         </Dialog>
